@@ -17,4 +17,11 @@ public class AnnalynsInfiltration {
             return true;
         }else return knightIsAwake;
     }
+    public static boolean canSignalPrisoner(boolean archerIsAwake, boolean prisonerIsAwake) {
+        if(!archerIsAwake && prisonerIsAwake){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
