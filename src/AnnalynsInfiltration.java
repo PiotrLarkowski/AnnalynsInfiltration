@@ -11,14 +11,10 @@ public class AnnalynsInfiltration {
             return true;
         }else if(!knightIsAwake && !archerIsAwake && prisonerIsAwake){
             return true;
-        }else if(!knightIsAwake && archerIsAwake && prisonerIsAwake){
+        }else if(!knightIsAwake && archerIsAwake){
             return true;
-        }else if(knightIsAwake && archerIsAwake && !prisonerIsAwake){
+        }else if(knightIsAwake && archerIsAwake){
             return true;
-        }else if(knightIsAwake && !archerIsAwake && prisonerIsAwake){
-            return true;
-        }else{
-            return false;
-        }
+        }else return knightIsAwake;
     }
 }
